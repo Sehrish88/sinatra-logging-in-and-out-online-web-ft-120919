@@ -1,8 +1,8 @@
 class User < ActiveRecord::Base
   attr_accessor :username, :password, :balance
-  def initialize(hash)
+  def initialize(username=nil, password=nil, balance=nil)
     @username = username
-    @password = password
+    @password = password 
     @balance = balance 
   end 
 end 
